@@ -1,0 +1,87 @@
+$gold: #B19534;
+
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("jr.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 2rem) 100%;
+    background-attachment: fixed;
+    background-size: min(50%, 648px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    & * {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin: {
+        top: 1rem;
+        bottom: 1rem;
+    };
+}
+
+button {
+    background-color: $gold;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    -webkit-appearance: button;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 1.5rem;
+}
+
+#content {
+    overflow: auto;
+    height: calc(100% - 4rem);
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    justify-items: center;
+    
+    grid-template-columns: repeat(1, 1fr);
+    @media (min-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 992px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width: 1400px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    & > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //margin: 0.5rem 1.5rem 3rem;
+        
+        & > button {
+            width: 100%;
+        }
+        
+    }
+}
