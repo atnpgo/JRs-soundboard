@@ -1,21 +1,4 @@
 const $content = document.querySelector('#content');
-
-const addButton = ({text, sound}) => {
-    const div = document.createElement('div');
-    const btn = document.createElement('button');
-    btn.innerText = text;
-    const howl = new Howl({
-        src: [sound]
-    });
-    btn.addEventListener('click', e => {
-        e.preventDefault();
-        e.stopPropagation();
-        howl.play();
-    });
-    div.appendChild(btn);
-    $content.appendChild(div);
-};
-
 [
     {text: 'AEW Tix.com', sound: 'sounds/aewtix.com.mp3'},
     {text: 'gifted athlete', sound: 'sounds/an amazingly gifted athlete.mp3'},
@@ -56,4 +39,18 @@ const addButton = ({text, sound}) => {
     {text: 'well folks uh', sound: 'sounds/well folks uh.mp3'},
     {text: 'whatever you say', sound: 'sounds/whatever you say.mp3'},
     {text: 'you wanna win', sound: 'sounds/you wanna win.mp3'}
-].forEach(addButton);
+].forEach(({text, sound}) => {
+    const div = document.createElement('div');
+    const btn = document.createElement('button');
+    btn.innerText = text;
+    const howl = new Howl({
+        src: [sound]
+    });
+    btn.addEventListener('click', e => {
+        e.preventDefault();
+        e.stopPropagation();
+        howl.play();
+    });
+    div.appendChild(btn);
+    $content.appendChild(div);
+});
