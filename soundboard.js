@@ -1,5 +1,7 @@
 const $content = document.querySelector('#content');
 [
+    {text: 'jezebel', sound: 'sounds/jezebel.mp3'},
+    {text: 'slobber knocker', sound: 'sounds/slobberknocker.mp3'},
     {text: 'AEW Tix.com', sound: 'sounds/aewtix.com.mp3'},
     {text: 'gifted athlete', sound: 'sounds/an amazingly gifted athlete.mp3'},
     {text: 'kickout 1', sound: 'sounds/and a kickout.mp3'},
@@ -25,7 +27,6 @@ const $content = document.querySelector('#content');
     {text: 'strong, agile', sound: 'sounds/she\'s strong she\'s agile.mp3'},
     {text: 'Ending', sound: 'sounds/show ending.mp3'},
     {text: 'show stealing matchup', sound: 'sounds/show stealing matchup.mp3'},
-    {text: 'slobber knocker', sound: 'sounds/slobberknocker.mp3'},
     {text: 'superkick party', sound: 'sounds/superkick party.mp3'},
     {text: 'tag team action', sound: 'sounds/tag team action.mp3'},
     {text: 'annoying', sound: 'sounds/that\'s annoying.mp3'},
