@@ -44,8 +44,9 @@ button {
 
 #content {
   overflow: auto;
-  height: calc(100% - 4rem);
+  height: calc(100% - 7rem);
   margin: 0;
+  padding-bottom: 3rem;
   width: 100%;
   display: grid;
   grid-auto-rows: 1fr;
