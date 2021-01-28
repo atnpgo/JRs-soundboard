@@ -3,6 +3,8 @@ const $content = document.querySelector('#content');
     {text: 'jezebel', sound: 'sounds/jezebel.mp3'},
     {text: 'slobber knocker', sound: 'sounds/slobberknocker.mp3'},
     {text: 'AEW Tix.com', sound: 'sounds/aewtix.com.mp3'},
+    {text: 'bitch ass', sound: 'sounds/bitch ass.mp3'},
+    {text: 'ubba lubba dub dub', sound: 'sounds/wubba lubba dub dub.mp3'},
     {text: 'gifted athlete', sound: 'sounds/an amazingly gifted athlete.mp3'},
     {text: 'kickout 1', sound: 'sounds/and a kickout.mp3'},
     {text: 'kickout 2', sound: 'sounds/got a shoulder up at the last moment.mp3'},
