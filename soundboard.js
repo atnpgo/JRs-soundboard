@@ -1,5 +1,6 @@
 const $content = document.querySelector('#content');
 [
+    {text: 'kenny omega', sound: 'sounds/kenny omega.mp3'},
     {text: 'jezebel', sound: 'sounds/jezebel.mp3'},
     {text: 'slobber knocker', sound: 'sounds/slobberknocker.mp3'},
     {text: 'AEW Tix.com', sound: 'sounds/aewtix.com.mp3'},
